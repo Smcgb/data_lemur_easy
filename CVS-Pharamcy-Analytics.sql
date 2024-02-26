@@ -15,10 +15,8 @@ LIMIT 3;
 
 --with CTE using Rank()
 WITH t1 as (
-
 SELECT product_id, total_sales - cogs as profit, drug
 FROM pharmacy_sales
-
 ),
 
 t2 as (SELECT 
