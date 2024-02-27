@@ -7,3 +7,8 @@ SELECT part FROM parts_assembly
 WHERE finish_date is NULL
 GROUP BY part;
 
+--The above solution no longer registers as valid as of 2024
+
+--Updated 2024 query that adds `assembly_step` to pass updated query
+SELECT part, assembly_step from parts_assembly
+WHERE finish_date is NULL;
